@@ -19,6 +19,8 @@ colorBtn.addEventListener('click',()=>{
 fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand').then(res=>res.json())
 .then(data=>{
 
+document.querySelector('.quotes-display').innerHTML=data[0].content.rendered
+
 
 
 })

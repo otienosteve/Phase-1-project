@@ -2,7 +2,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
 button{
     color:green;
@@ -13,6 +13,6 @@ button{
     width:20%;
 }
 .quotes-display{
-    width:30%;
+    width:70%;
     height:inherit;
 }
