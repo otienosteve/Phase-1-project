@@ -1,6 +1,7 @@
 body{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-content: center;
 }
 button{
@@ -9,4 +10,9 @@ button{
     border: none;
     border-radius: 3rem;
     cursor: pointer;
+    width:20%;
+}
+.quotes-display{
+    width:30%;
+    height:inherit;
 }
