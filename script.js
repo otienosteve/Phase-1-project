@@ -22,19 +22,27 @@ fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand').then(res=>
         let div =document.createElement('div')
         div.classList.add('quote')
         div.innerHTML=datum.content.rendered
+        div.style.cursor='pointer'
         document.querySelector('.quotes-display').append(div)
     }
-
     let quotes=document.querySelectorAll('.quote')
     // console.log(quotes)
     quotes.forEach(elem=>{
-        console.log(elem)
+        // console.log(elem)
         
         elem.addEventListener('click',()=>{        
         speak(elem.innerText)})
+        elem.addEventListener('mouseover',()=>{
+        elem.setAttribute('title','click to listen')
+        })
+    
+    }
     
     
-    })
+    
+    
+    )
+  
 
 
 })
@@ -52,3 +60,4 @@ function speak( text ){
   speak()
 
 })
+
