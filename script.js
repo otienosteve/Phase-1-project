@@ -9,14 +9,19 @@ function getColor(){
     })
 }
 
+
 colorBtn=document.getElementById('color-btn')
 colorBtn.addEventListener('click',()=>{
     getColor()
 })
 
 
+fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand').then(res=>res.json())
+.then(data=>{
 
 
+
+})
 
 
 
