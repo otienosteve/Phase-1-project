@@ -1,0 +1,12 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+button{
+    color:green;
+    background-color: orange;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
