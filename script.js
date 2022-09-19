@@ -18,8 +18,12 @@ colorBtn.addEventListener('click',()=>{
 
 fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand').then(res=>res.json())
 .then(data=>{
+    for ( datum of data){
+        let div =document.createElement('div')
+        div.innerHTML=datum.content.rendered
+        document.querySelector('.quotes-display').append(div)
+    }
 
-document.querySelector('.quotes-display').innerHTML=data[0].content.rendered
 
 
 
